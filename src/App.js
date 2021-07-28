@@ -1,6 +1,5 @@
 import React from 'react';
 import PortfolioBox from './components/PortfolioBox';
-import Header from './components/PortfolioBox';
 
 //import logo from './logo.svg';
 
