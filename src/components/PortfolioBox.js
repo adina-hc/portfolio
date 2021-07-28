@@ -9,7 +9,6 @@ import Contact from './pages/Contact';
 export default function PortfolioBox() {
     const [presentPage, setPresentPage] = useState('Home')
 
-
 // Depending on the current page value, the page will be displayed
 
     const displayPage = () => {
@@ -29,14 +28,13 @@ export default function PortfolioBox() {
         
     };
 
-    const switchPage = (page) => setCurrentPage(page);
+    const switchPage = (page) => setPresentPage(page);
 
+    // Pass present page from state and run function to update page, calling displa page method
     return (
-        <div>      
-            {/* Pass present page from state and update function */}
-            <NavElements currentPage = {presentPage} switchPage = {switchPage}
-            {/* Call renderPage method to return a component */}
+        <div>
+            <NavElements presentPage = {presentPage} switchPage = {switchPage} />
             {displayPage()}
-        </div>
+        </div>  
     );
 }
