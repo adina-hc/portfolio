@@ -1,0 +1,530 @@
+/* Universal Settings */
+
+/* Template Variables */
+:root {
+  --contact-opt: #d1e8e2;
+  --resume: #5d5c61;
+  --work: #b1a296;
+  --light: #eee2dc;
+  --base: black;
+  --contact: #1b2631;
+  --about-me: #023213;
+  --abm: #1c3334;
+  --title-fonts: "Aktiv Grotesk", "Segoe UI";
+  --other-fonts: "Source Sans Pro ExtraLight", "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  --article-fonts: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --reset-fonts: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  /* Add scroll effect */
+  scroll-behavior: smooth;
+}
+/* Header general settings */
+header {
+  background-color: var(--base);
+  width: 100%;
+  height: 15rem;
+  margin: 0 auto;
+  padding: 0;
+  color: var(--light);
+  text-align: right;
+}
+
+/* Banner for Header */
+.banner {
+  /* background-image: url(../images/matrix.jpg); */
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  width: 100%;
+  display: block;
+}
+/* Profile picture area */
+.profile-picture {
+  display: block;
+  padding: 0.5rem;
+  top: 5%;
+  left: 2%;
+  border-radius: 90px;
+  padding: 5px;
+  height: 150px;
+  width: 150px;
+}
+
+/* Name */
+
+.developer-name {
+    font-size: 3.5rem;
+    padding: 0;
+    
+}
+
+
+
+h1 {
+  margin: 15px;
+  width: 100%;
+  height: 10rem;
+  font-family: var(--other-fonts);
+  font-size: 3rem;
+  color: var(--light);
+  justify-content: right;
+  display: block;
+}
+
+/* Color background for the Nav tabs */
+.tab-about {
+  background-color: var(--about-me);
+}
+
+.tab-work {
+  background-color: var(--work);
+}
+
+.tab-resume {
+  background-color: var(--resume);
+}
+
+.tab-contact {
+  background-color: var(--contact);
+}
+
+.tab-top {
+  background-color: var(--base);
+  opacity: 0.7;
+}
+
+/* Navigation Bar */
+nav {
+  overflow: hidden;
+}
+
+.nav-bar {
+  /* To make the nav bar static even if scrolling occurs - see if it works, otherwise remove */
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  align-items: right;
+  padding: 0;
+  margin: 0.15em;
+  border-radius: 10px;
+  width: 7.5pc;
+  height: fit-content;
+  text-align: center;
+}
+
+/* To remove underline text from links */
+a:link {
+  text-decoration: none;
+  color: var(--contact-opt);
+}
+
+/* Visited links */
+a:visited {
+  color: var(--light);
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.2rem;
+}
+
+/* All Sections */
+section {
+  padding-top: 3.5rem;
+}
+
+#about-me, #resume, #contact-me  {
+  height: 100vh;
+  ;
+}
+
+h2 {
+  text-align: left;
+  font-size: 1.6rem;
+  align-content: left;
+  font-family: var(--article-fonts);
+}
+
+/* Font opacity */
+.subtitles {
+  background-color: var(--light);
+  opacity: 0.5;
+}
+
+article {
+  background-color: var(--light);
+  opacity: 0.4;
+  border-radius: 25px;
+  padding: 1em;
+  margin: 1em;
+  height: fit-content;
+}
+
+
+
+/* About Me Section */
+
+.about-me {
+  /* Adding scroll stop at the start of the section  */
+  scroll-snap-align: start;
+  display: flex;
+  background-color: var(--about-me);
+}
+
+.subtitle-about-me {
+  background-color: var(--about-me);
+  margin: 1em;
+  width: 25%;
+  color: var(--light);
+}
+
+/* About me and Resume sections */
+.article-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column; /* see if this is actually a row */
+}
+
+.article-content p {
+  margin: 5px;
+  height: 30vh;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: var(--about-me);
+  overflow: auto;
+  /* background-color: var(--light)*/
+}
+
+/* Work Section */
+.work {
+  /* Adding scroll stop at start of element */
+  scroll-snap-align: start;
+  background-color: var(--work);
+  display: flex;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+}
+
+.subtitle-work {
+  background-color: var(--work);
+  margin: 1em;
+  width: 25%;
+  color: var(--light);
+}
+
+main img {
+  background-color: var(--light);
+  opacity: 1;
+  border: #b1a296;
+  border-radius: 25px;
+  color: var(--header);
+  padding: 0em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-work {
+  position: relative;
+  left: 2em;
+  top: 2em;
+  color: var(--light);
+  text-transform: uppercase;
+  text-shadow: 2px 2px;
+  font-weight: bold;
+  width: 10px;
+  height: 10px;
+}
+
+/* Work Subtitle section */
+.work {
+  /* Adding scroll stop at the start of the section  */
+  scroll-snap-align: start;
+  display: flex;
+  background-color: var(--work);
+}
+
+.subtitle-work {
+  background-color: var(--work);
+  margin: 1em;
+  width: 25%;
+  color: var(--light);
+}
+
+/* Top box in Work image container */
+.work-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-box-top img {
+  height: 75vh;
+  width: 98%;
+  object-fit: cover;
+}
+
+/* Bottom box in Work image container */
+.work-box-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.work-box-bottom img {
+  margin: 5px;
+  flex-direction: row;
+  height: 25vh;
+  width: 55%;
+}
+
+/* On click sections grow */
+img:active {
+  transform: scale (1.5);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+}
+
+span.card-title {
+  color: var(--contact);
+}
+
+/* Resume Section */
+.resume {
+  /* Adding scroll stop at the start of the section  */
+  scroll-snap-align: start;
+  display: flex;
+  height: 20%;
+  background-color: var(--resume);
+}
+
+.subtitle-resume {
+  background-color: var(--resume);
+  margin: 1em;
+  width: 25%;
+  color: var(--light);
+}
+
+.article li {
+  font-family: var(--title-fonts);
+  color: var(--resume);
+}
+
+/* Contact Section */
+.contact-h6 {
+  color: var(--contact-opt)
+}
+
+#contact-me {
+  display: flex;
+}
+.contact-me {
+  /* Adding scroll stop at the start of the section  */
+  scroll-snap-align: start;
+  background-color: var(--contact);
+  color: var(--contact-opt)
+}
+
+.subtitle-contact {
+  background-color: var(--contact);
+  margin: 1em;
+  width: 25%;
+  color: var(--light);
+}
+
+
+.contact-information li a {
+  display: block;
+  width: 5pc;
+  align-content: right;
+  margin-left: 6em;
+}
+
+/* Logo adjustments */
+.resize-phone,
+.resize-mail,
+.resize-fb,
+.resize-git {
+  width: 3rem;
+  size: 3rem;
+  align-items: center;
+}
+
+.resize-lnk {
+  width: 8rem;
+  size: 8rem;
+  align-items: center;
+}
+
+/* Contact Template adjustments */
+#success_message {
+  width: 100%;
+  height:100%;
+  display: none;
+}
+
+#error_message {
+  width:100%;
+  height:100%;
+  display:none;
+}
+
+
+/* Footer Section */
+footer {
+  background-color: var(--contact);
+  color: var(--light);
+  padding: 1em;
+}
+
+
+/* reg 2021*/
+footer p {
+  text-align: center;
+}
+
+/* Media Queries for Devices */
+/* Use flex-direction to stack the navbar and body */
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  img .profile-picture {
+    align-items: right;
+    align-content: right;
+  }
+
+  nav {
+    overflow: visible;
+  }
+  .nav-bar {
+    position: fixed;
+    display: block;
+    right: 15rem;
+    width: 45%;
+  }
+  .banner {
+    width: 100%;
+  }
+  .about-me,
+  .work,
+  .resume {
+    width: 85%;
+    
+  }
+  main,
+  article,
+  footer {
+    flex-direction: column;
+    margin: 0;
+    width: 118%;
+  }
+  .profile-picture {
+    position: absolute;
+    flex-direction: column;
+  }
+  .profile-picture,
+  .contact-information,
+  .banner,
+  .work-box-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .work-box-top,
+  .work-box-bottom {
+    height: 55%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  nav {
+    overflow: visible;
+    flex-direction: column;
+  }
+  .nav-bar {
+    position: fixed;
+    align-items: center;
+    display: block;
+    right: 15rem;
+    width: 65%;
+  }
+
+  header figure nav {
+    overflow: none;
+  }
+
+  nav,
+  nav ul {
+    position: none;
+    align-items: center;
+    top: 0;
+    right: 0;
+  }
+
+  h1 {
+    display: fixed;
+    left: 2rem;
+  }
+
+  .profile-picture {
+    position: static;
+  }
+  .profile-picture,
+  .contact-information {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Cell phone */
+@media screen and (max-width: 375px) {
+  * {
+    margin: 0;
+  }
+  header {
+    width: 100%;
+  }
+  .banner {
+    width: 100%;
+  }
+  
+  h1 {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  nav {
+    overflow: visible;
+    background-color: var(--base);
+  }
+  /*.nav-bar {
+    position: fixed;
+    align-items: left;
+  }*/
+  .nav-bar {
+    position: fixed;
+    align-items: center;
+    display: block;
+    right: 8rem;
+    width: 10%;
+  }
+  .about-me,
+  .work,
+  .resume {
+    width: 85%;
+  }
+}
+
