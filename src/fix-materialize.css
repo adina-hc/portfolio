@@ -1,0 +1,45 @@
+.oneLine {
+  margin: 0;
+  padding: 0;
+}
+
+.sports-card .card .card-image img {
+  padding: 0;
+}
+
+.sports-card .card .card-image .card-title {
+  color: #b1a296;
+}
+
+.weather-card {
+  border-radius: 100px;
+}
+
+.weather-card .newContainer {
+  border-radius: 50px;
+}
+
+.weather-card .card .card-image img {
+  padding: 0;
+}
+
+.weather-card .card .card-image .card-title {
+  color: #b1a296;
+}
+
+.coding-card {
+  border-radius: 20px;
+}
+
+.coding-card .card .card-image img {
+  padding: 0;
+}
+
+.coding-card .card .card-image .card-title {
+  color: #b1a296;
+}
+
+.resume article {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=fix-materialize.css.map */

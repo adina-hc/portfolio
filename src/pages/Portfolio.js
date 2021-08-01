@@ -1,17 +1,22 @@
 // Import resources
 import React from 'react';
-import About from '../components/About';
-import Work from '../components/Work';
-import Resume from '../components/Resume';
-import Contact from '../components/Contact';
+import Header from '../components/Header/index';
+import About from '../components/About/index';
+import Work from '../components/Work/index';
+import Resume from '../components/Resume/index';
+import Contact from '../components/Contact/index';
+import 'materialize-css/dist/css/materialize.min.css';
+import '../'
 
 const Portfolio = () => {
   return (
     <>
+      <Header />
       <About />
       <Work />
       <Resume />
       <Contact />
+    
     </>
   )
 }

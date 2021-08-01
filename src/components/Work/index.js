@@ -14,10 +14,7 @@ const Work = () => {
 
     return (
       <div>
-        <h1>proj name{obj[0].name}</h1>
-        <img src={pets} alt="pets"></img>
-        <h1>proj name 2: {obj[1].name}</h1>
-
+        
         <section id="work" className="work section">
           <div className="subtitle-work subtitles">
             <h2>Work</h2>
@@ -26,7 +23,7 @@ const Work = () => {
           <section className="work-content section">
             <section className="row">
               <div className="sports-card">
-                <div className="col s12">
+                <div className="col s6">
                   <div className="card">
                     <div className="card-image">
                       <div>
@@ -51,7 +48,7 @@ const Work = () => {
                 </div>
               </div>
               <div className="sports-card">
-                <div className="col s12">
+                <div className="col s6">
                   <div className="card">
                     <div className="card-image">
                       <div>

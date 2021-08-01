@@ -1,0 +1,62 @@
+.nav {
+  background-color: black;
+}
+
+.oneLine {
+  margin: 0;
+  padding: 0;
+}
+
+.sports-card {
+  .card {
+    .card-image {
+      img {
+        padding: 0;
+      }
+      .card-title {
+        color: #b1a296;
+      }
+    }
+  }
+}
+
+
+.weather-card {
+  .newContainer {
+    border-radius: 50px;
+  }
+  .card {
+    .card-image {
+      img {
+        padding: 0;
+      }
+      .card-title {
+        color: #b1a296;
+      }
+    }
+  }
+  border-radius: 100px;
+}
+
+
+.coding-card {
+  border-radius: 20px;
+
+  .card {
+    .card-image {
+      img {
+        padding: 0;
+      }
+      .card-title {
+        color: #b1a296;
+      }
+    }
+  }
+  //   height: 45vh;
+}
+
+.resume {
+  article {
+    opacity: 0.8;
+  }
+}
