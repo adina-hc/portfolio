@@ -1,17 +1,18 @@
 // Import resources
 import React from 'react';
-import profilePic from '../../images/adina-portfolio.JPG';
 
+// To render header
 const Header = () => {
   return (
     <header>
       <div id="goTop" className="banner">
-        <div>
-          <img className="profile-picture" src={profilePic} alt=""></img>
-          <h1 className="developer-name">Adina Henderson</h1>
+        <div className="toggle-btn">
+          <span />
+          <span />
+          <span />
+          <span />
         </div>
-
-        <nav>
+        <nav id="nav" className="nav">
           <ul className="nav-bar">
             <li className="tab-about">
               <a href="#about-me">About me</a>

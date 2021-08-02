@@ -27,7 +27,7 @@ body {
 header {
   background-color: var(--base);
   width: 100%;
-  height: 15rem;
+  height: auto;
   margin: 0 auto;
   padding: 0;
   color: var(--light);
@@ -58,22 +58,11 @@ header {
 /* Name */
 
 .developer-name {
-    font-size: 3.5rem;
-    padding: 0;
-    
-}
-
-
-
-h1 {
-  margin: 15px;
-  width: 100%;
-  height: 10rem;
+  font-size: 3.5rem;    
   font-family: var(--other-fonts);
   font-size: 3rem;
   color: var(--light);
-  justify-content: right;
-  display: block;
+  justify-content: center;
 }
 
 /* Color background for the Nav tabs */
@@ -99,6 +88,7 @@ h1 {
 }
 
 /* Navigation Bar */
+
 nav {
   overflow: hidden;
 }
@@ -121,6 +111,24 @@ nav ul li {
   height: fit-content;
   text-align: center;
 }
+
+/* Toggle button */
+.toggle-btn {
+  width: 35px;
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  display: none;
+}
+.toggle-bnt span {
+  display: inline-block;
+  width:100%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+
+
 
 /* To remove underline text from links */
 a:link {
@@ -173,6 +181,13 @@ article {
 
 
 /* About Me Section */
+.center-div {
+  display:inline-block;
+  align-items: center;
+  justify-content: center;
+  vertical-align: auto;
+
+}
 
 .about-me {
   /* Adding scroll stop at the start of the section  */
@@ -333,6 +348,9 @@ span.card-title {
   background-color: var(--contact);
   color: var(--contact-opt)
 }
+.form-logos{
+  display:inline-block;
+}
 
 .subtitle-contact {
   background-color: var(--contact);
@@ -343,10 +361,7 @@ span.card-title {
 
 
 .contact-information li a {
-  display: block;
-  width: 5pc;
-  align-content: right;
-  margin-left: 6em;
+  display: inline-block; 
 }
 
 /* Logo adjustments */
@@ -401,8 +416,8 @@ footer p {
   }
 
   img .profile-picture {
-    align-items: right;
-    align-content: right;
+    align-items: center;
+    align-content: center;
   }
 
   nav {
@@ -412,7 +427,7 @@ footer p {
     position: fixed;
     display: block;
     right: 15rem;
-    width: 45%;
+    /*width: 45%;*/
   }
   .banner {
     width: 100%;
@@ -430,11 +445,8 @@ footer p {
     margin: 0;
     width: 118%;
   }
-  .profile-picture {
-    position: absolute;
-    flex-direction: column;
-  }
-  .profile-picture,
+
+  
   .contact-information,
   .banner,
   .work-box-bottom {
@@ -450,7 +462,17 @@ footer p {
 }
 
 @media screen and (max-width: 1150px) {
+  .toggle-btn{
+    display: block;
+
+  }
   nav {
+    display: none;
+    width: 100%;
+    border-top: 1px solid #000;
+    padding-top: 20px;
+    margin-top: 30px;
+    
     overflow: visible;
     flex-direction: column;
   }
@@ -479,10 +501,7 @@ footer p {
     left: 2rem;
   }
 
-  .profile-picture {
-    position: static;
-  }
-  .profile-picture,
+ 
   .contact-information {
     display: flex;
     flex-direction: column;
@@ -497,25 +516,28 @@ footer p {
   header {
     width: 100%;
   }
-  .banner {
-    width: 100%;
-  }
-  
+
   h1 {
     display: flex;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
-  nav {
-    overflow: visible;
+  h2 {
+    font-size: 1rem;
+  }
+  nav { 
+    display: flex;
+    overflow: visible;    
     background-color: var(--base);
+    align-items: left;
   }
   /*.nav-bar {
     position: fixed;
     align-items: left;
   }*/
   .nav-bar {
-    position: fixed;
+    position:-webkit-sticky;
+    left:0.5rem;
     align-items: center;
     display: block;
     right: 8rem;
@@ -524,7 +546,10 @@ footer p {
   .about-me,
   .work,
   .resume {
-    width: 85%;
+    width: 100%;
+
+
   }
+
 }
 
