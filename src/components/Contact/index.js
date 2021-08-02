@@ -20,7 +20,6 @@ const Contact = () => {
               <h2 className="subtitle-contact subtitles">Contact</h2>
             </div>
             <div className="form-logos">
-              <ContactForm />
               <ul className="contact-information">
                 <li>
                   <a href="(513)512-5663" target="_blank">
@@ -83,6 +82,7 @@ const Contact = () => {
                   </a>
                 </li>
               </ul>
+              <ContactForm />
             </div>
           </section>
           <Footer />

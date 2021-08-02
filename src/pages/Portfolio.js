@@ -5,7 +5,7 @@ import About from '../components/About/index';
 import Work from '../components/Work/index';
 import Resume from '../components/Resume/index';
 import Contact from '../components/Contact/index';
-import Footer from '../components/Footer/index';
+
 import 'materialize-css/dist/css/materialize.min.css';
 
 
@@ -17,7 +17,6 @@ const Portfolio = () => {
       <Work />
       <Resume />
       <Contact />
-      <Footer />
     </>
   )
 }
