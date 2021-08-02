@@ -1,5 +1,6 @@
 import React from 'react';
 import obj from '../../seeds/projectData.json';
+import Footer from '../Footer/index';
 
 // Import images for projects
 import pets from '../../images/happy-pets.png';
@@ -14,13 +15,11 @@ const Work = () => {
 
     return (
       <div>
-        
         <section id="work" className="work section">
-          <div className="subtitle-work subtitles">
-            <h2>Work</h2>
-          </div>
-
           <section className="work-content section">
+            <div className="subtitle">
+            <h2 className="subtitle-work subtitles">Work</h2>
+            </div>
             <section className="row">
               <div className="sports-card">
                 <div className="col s6">
@@ -34,9 +33,9 @@ const Work = () => {
                         >
                           <img id="happyPets" src={pets} alt="" />
                         </a>
-                        <span className="card-title">{obj[0].name}</span>
                       </div>
                     </div>
+                    <span className="card-title">{obj[0].name}</span>
                     <div className="card-content">
                       <p>{obj[0].description}</p>
                     </div>
@@ -59,9 +58,9 @@ const Work = () => {
                         >
                           <img id="sportsAlmanac" src={sports} alt="" />
                         </a>
-                        <span className="card-title">{obj[1].name}</span>
                       </div>
                       <div className="card-content">
+                        <span className="card-title">{obj[1].name}</span>
                         <p>{obj[1].description}</p>
                       </div>
                       <div className="card-action">
@@ -85,8 +84,8 @@ const Work = () => {
                       >
                         <img id="weatherApp" src={weather} alt="" />
                       </a>
-                      <span className="card-title">{obj[2].name}</span>
                     </div>
+                    <span className="card-title">{obj[2].name}</span>
                     <div className="card-content">
                       <p>{obj[2].description}</p>
                     </div>
@@ -109,8 +108,8 @@ const Work = () => {
                       >
                         <img id="codingTest" src={assessment} alt="" />
                       </a>
-                      <span className="card-title">{obj[3].name}</span>
                     </div>
+                    <span className="card-title">{obj[3].name}</span>
                     <div className="card-content">
                       <p>{obj[3].description}</p>
                     </div>
@@ -124,6 +123,7 @@ const Work = () => {
             </section>
           </section>
         </section>
+        <Footer />
       </div>
     );
 };

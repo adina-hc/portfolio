@@ -2,6 +2,7 @@ import React from 'react';
 
 // Import contact template
 import ContactForm from '../../components/Contact/contactForm';
+import Footer from '../Footer/index';
 
 // Import images
 import phone from '../../images/blue-phone.png';
@@ -15,8 +16,8 @@ const Contact = () => {
       <>
         <div>
           <section id="contact-me" className="contact-me">
-            <div className="subtitle-contact subtitles">
-              <h2>Contact</h2>
+            <div className="subtitle">
+              <h2 className="subtitle-contact subtitles">Contact</h2>
             </div>
             <div className="form-logos">
               <ContactForm />
@@ -84,7 +85,7 @@ const Contact = () => {
               </ul>
             </div>
           </section>
-          
+          <Footer />
         </div>
       </>
     );

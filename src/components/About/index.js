@@ -1,5 +1,6 @@
 import React from 'react';
 import profilePic from "../../images/adina-portfolio.JPG";
+import Footer from '../Footer/index';
 
 // Import style
 import '../../reset.css'
@@ -10,8 +11,8 @@ function About() {
     return (
       <div>
         <section id="about-me" class="about-me">
-          <div class="subtitle-about-me subtitles">
-            <h2>About Me</h2>
+          <div className=" subtitle">
+            <h2 className="subtitle-about-me subtitles">About Me</h2>
           </div>
           <div className="center-div">
             <h1 className="developer-name">Adina Henderson</h1>
@@ -29,6 +30,7 @@ function About() {
             </article>
           </div>
         </section>
+        <Footer />
       </div>
     );
 }

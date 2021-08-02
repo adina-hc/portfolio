@@ -1,6 +1,7 @@
 // Import resources
 import React from 'react'
 import resumeDoc from '../../images/AH-Resume.pdf'
+import Footer from '../Footer/index';
 
 const Resume = () => {
     return (
@@ -13,6 +14,7 @@ const Resume = () => {
                 <iframe title="Display Resume" type="application/pdf" src={resumeDoc} style={{height: 620}} frameborder="0"></iframe>
             </article>
         </section>
+        <Footer />
         </div>
     )
 }

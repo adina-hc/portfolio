@@ -164,6 +164,11 @@ h2 {
 }
 
 /* Font opacity */
+.subtitle {
+  margin: 1em;
+  width: 25%;
+  color: var(--light);
+}
 .subtitles {
   background-color: var(--light);
   opacity: 0.5;
@@ -198,9 +203,6 @@ article {
 
 .subtitle-about-me {
   background-color: var(--about-me);
-  margin: 1em;
-  width: 25%;
-  color: var(--light);
 }
 
 /* About me and Resume sections */
@@ -232,9 +234,6 @@ article {
 
 .subtitle-work {
   background-color: var(--work);
-  margin: 1em;
-  width: 25%;
-  color: var(--light);
 }
 
 main img {
@@ -268,12 +267,7 @@ main img {
   background-color: var(--work);
 }
 
-.subtitle-work {
-  background-color: var(--work);
-  margin: 1em;
-  width: 25%;
-  color: var(--light);
-}
+
 
 /* Top box in Work image container */
 .work-content {
@@ -324,9 +318,6 @@ span.card-title {
 
 .subtitle-resume {
   background-color: var(--resume);
-  margin: 1em;
-  width: 25%;
-  color: var(--light);
 }
 
 .article li {
@@ -354,9 +345,6 @@ span.card-title {
 
 .subtitle-contact {
   background-color: var(--contact);
-  margin: 1em;
-  width: 25%;
-  color: var(--light);
 }
 
 
@@ -407,9 +395,10 @@ footer p {
   text-align: center;
 }
 
+/**************************************************/
 /* Media Queries for Devices */
 /* Use flex-direction to stack the navbar and body */
-
+/**************************************************/
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
@@ -508,7 +497,7 @@ footer p {
   }
 }
 
-/* Cell phone */
+/*********************** Cell phone ***********************/
 @media screen and (max-width: 375px) {
   * {
     margin: 0;
