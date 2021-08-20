@@ -1,0 +1,36 @@
+const projects = [
+  {
+    name: "Pata de Perro",
+    description:
+      "This application allows the user to choose from a variety of vacation activities, book and pay for them, while saving their selections if they are off-line",
+    image: "./assets/images/PdPmockup2.png",
+    gitHubLink: "https://github.com/adina-hc/pata-de-perro",
+    deployWebsite: "https://shrouded-bayou-22662.herokuapp.com/",
+  },
+  {
+    name: "Sports Almanac",
+    description:
+      "The sports almanac application provides the user with meaningful information about soccer matches on a certain date, team information, and the ability to access video snippets related to that league's matches, goals, etc.",
+    image: "./assets/images/sports-almanac.png",
+    gitHubLink: "https://github.com/adina-hc/sports-almanac",
+    deployWebsite: "https://adina-hc.github.io/sports-almanac/",
+  },
+  {
+    name: "Weather App",
+    description:
+      "Weather Application featuring current weather and five day forecast for a city searched. The information includes date, temperature, humidity, wind speed and only for the current weather, the current UV index.",
+    image: "./assets/images/weather.png",
+    gitHubLink: "https://github.com/adina-hc/06-weather-dashboard",
+    deployWebsite: "https://adina-hc.github.io/06-weather-dashboard/",
+  },
+  {
+    name: "Coding Assessment",
+    description:
+      "The Coding Assessment application features JavaScript timed multiple choice questions, and restults storage for history of high scores.",
+    image: "./assets/images/coding-assessment.png",
+    gitHubLink: "https://github.com/adina-hc/04-coding-assessment",
+    deployWebsite: "https://adina-hc.github.io/04-coding-assessment/",
+  },
+];
+
+export default projects;

@@ -1,4 +1,12 @@
 [
+  {
+    "name": "Pata de Perro",
+    "description":
+      "This application allows the user to choose from a variety of vacation activities, book and pay for them, while saving their selections if they are off-line",
+    "image": "./assets/images/PdPmockup2.png",
+    "gitHubLink": "https://github.com/adina-hc/pata-de-perro",
+    "deployWebsite": "https://shrouded-bayou-22662.herokuapp.com/"
+  },
     {
         "name": "Happy Pets Shelter",
         "description": "Happy Pets Shelter! An app to help pets find a new family. The user can view pets sheltered for future adoption.",
