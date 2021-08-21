@@ -303,8 +303,10 @@ img:active {
   -ms-transform: scale(1.5);
 }
 
-span.card-title {
+.card-title {
   color: var(--contact);
+  text-align: center;
+  
 }
 
 /* Resume Section */
@@ -312,6 +314,7 @@ span.card-title {
   /* Adding scroll stop at the start of the section  */
   scroll-snap-align: start;
   display: flex;
+  justify-content: space-between;
   height: 20%;
   background-color: var(--resume);
 }
@@ -320,6 +323,17 @@ span.card-title {
   background-color: var(--resume);
 }
 
+.article-content {
+  height: 75vh;
+}
+
+.article-content iframe {
+  height: 90vh;
+}
+
+.sportsAlmanac {
+  color: #000 !important;
+}
 .article li {
   font-family: var(--title-fonts);
   color: var(--resume);
@@ -332,6 +346,7 @@ span.card-title {
 
 #contact-me {
   display: flex;
+  /* justify-content: space-between; */
 }
 .contact-me {
   /* Adding scroll stop at the start of the section  */
@@ -341,6 +356,12 @@ span.card-title {
 }
 .form-logos{
   display:inline-block;
+}
+
+.form-logos li {
+  display: inline;
+  margin: 5px;
+  padding: 10px;
 }
 
 .subtitle-contact {

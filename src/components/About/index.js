@@ -22,13 +22,16 @@ function About() {
 
               <article class="article-content">
                 <p>
-                  {" "}
                   Full Stack Web Developer in the making. Currently a student of
-                  Tecnologico de Monterrey's Full Stack Web Development
-                  Bootcamp. Coming from a Business, Accounting & Auditing,
-                  Finance and Consulting background, I am interested and
-                  preparing for a career change. I love challenge, languages,
-                  music and dance.
+                  Tecnologico de Monterrey's Bootcamp and soon to graduate with
+                  a Certificate. Web technologies include JavaScript, CSS, HTML,
+                  REACT, databases mySQL and Mongo.
+
+                  My passion is automation, being able to create quality solutions to simplify and optimize time and efforts.
+                <br/>
+                  Coming from a Business, Accounting & Auditing, Finance and
+                  Consulting background, I am eager to leap into the Technology field.
+                  I love challenge, languages, music and dance.
                 </p>
               </article>
             </div>
