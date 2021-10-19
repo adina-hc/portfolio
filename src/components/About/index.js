@@ -22,16 +22,22 @@ function About() {
 
               <article class="article-content">
                 <p>
-                  Full Stack Web Developer in the making. Currently a student of
-                  Tecnologico de Monterrey's Bootcamp and soon to graduate with
-                  a Certificate. Web technologies include JavaScript, CSS, HTML,
-                  REACT, databases mySQL and Mongo.
-
-                  My passion is automation, being able to create quality solutions to simplify and optimize time and efforts.
-                <br/>
+                  Full stack web developer educated at Tec de Monterrey. Well
+                  versed with HTML, CSS, JavaScript, among other technologies.
+                  Proven staff management, as well as project management and
+                  development abilities, excellent interpersonal and
+                  communication skills. Passionate about database design. Highly
+                  successful in collaborative environments, while independently
+                  working, adaptable to change, problem solver, highly
+                  motivated, organized, and passionate about software design and
+                  development, data analysis, quality assurance, etc. Fluent in
+                  English and Spanish. Recently worked in diverse projects
+                  including different technologies: MERN, React, Databases (mySQL
+                  and NoSQL), Mongo, node.js, JavaScript, among others.
+                  <br />
                   Coming from a Business, Accounting & Auditing, Finance and
-                  Consulting background, I am eager to leap into the Technology field.
-                  I love challenge, languages, music and dance.
+                  Consulting background, I am eager to leap into the Technology
+                  field. I love challenge, languages, music and dance.
                 </p>
               </article>
             </div>
