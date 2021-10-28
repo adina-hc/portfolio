@@ -22,12 +22,21 @@ html,
 body {
   /* Add scroll effect */
   scroll-behavior: smooth;
+  height: 40vh;
 }
+  /* Background image */
+.bgImage {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Header general settings */
 header {
   background-color: var(--base);
   width: 100%;
-  height: auto;
+  height: auto; /*before auto */
   margin: 0 auto;
   padding: 0;
   color: var(--light);
@@ -54,6 +63,9 @@ header {
   height: 150px;
   width: 150px;
 }
+
+
+
 
 /* Name */
 
@@ -152,7 +164,7 @@ section {
 }
 
 #about-me, #resume, #contact-me  {
-  height: 100vh;
+  height: 88vh;
   ;
 }
 
@@ -176,7 +188,7 @@ h2 {
 
 article {
   background-color: var(--light);
-  opacity: 0.4;
+  opacity: 0.35;
   border-radius: 25px;
   padding: 1em;
   margin: 1em;
@@ -191,14 +203,15 @@ article {
   align-items: center;
   justify-content: center;
   vertical-align: auto;
+  height: fit-content;
 
 }
 
 .about-me {
   /* Adding scroll stop at the start of the section  */
-  scroll-snap-align: start;
   display: flex;
   background-color: var(--about-me);
+  scroll-snap-align: start;
 }
 
 .subtitle-about-me {
@@ -206,10 +219,17 @@ article {
 }
 
 /* About me and Resume sections */
+.article-container {
+  
+  padding-left: 10rem;
+  top: -2rem;
+}
+
 .article-content {
+  
   width: 75%;
   display: flex;
-  flex-direction: column; /* see if this is actually a row */
+  flex-direction: row; /* see if this is actually a row */
 }
 
 .article-content p {
@@ -315,7 +335,7 @@ img:active {
   scroll-snap-align: start;
   display: flex;
   justify-content: space-between;
-  height: 20%;
+  /* height: 20%; */
   background-color: var(--resume);
 }
 
@@ -324,11 +344,18 @@ img:active {
 }
 
 .article-content {
-  height: 75vh;
+  height: 45vh;
+  max-width: max-content;
+}
+.article-content-resume {
+  height: 70vh;
+  width: 80vh;
 }
 
 .article-content iframe {
   height: 90vh;
+  width: 65vh;
+  border-radius: 25px;
 }
 
 .sportsAlmanac {
@@ -406,14 +433,15 @@ img:active {
 /* Footer Section */
 footer {
   background-color: var(--contact);
-  color: var(--light);
-  padding: 1em;
+  height: auto;
 }
 
 
 /* reg 2021*/
 footer p {
+  padding: 2rem;
   text-align: center;
+  
 }
 
 /**************************************************/
@@ -431,10 +459,12 @@ footer p {
   }
 
   nav {
-    overflow: visible;
+    overflow: none;
+    background-color: black;
   }
+  
   .nav-bar {
-    position: fixed;
+    position: sticky;
     display: block;
     right: 15rem;
     /*width: 45%;*/
@@ -455,8 +485,6 @@ footer p {
     margin: 0;
     width: 118%;
   }
-
-  
   
   .banner,
   .work-box-bottom {
@@ -559,6 +587,9 @@ footer p {
     width: 100%;
 
 
+  }
+  .resume {
+    flex-wrap: wrap;
   }
 
 }
