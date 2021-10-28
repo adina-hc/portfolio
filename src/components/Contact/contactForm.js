@@ -30,7 +30,7 @@ const contactForm = () => {
                          </div>
                          <div className="row">
                              <div className="col-sm-12 form-group">
-                                 <label for="message">
+                                 <label htmlFor="message">
                                      Message:</label>
                                  <textarea className="form-control" type="textarea" name="message"
                                  id="message" maxLength="6000" rows="7"                              

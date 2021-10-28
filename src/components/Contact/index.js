@@ -2,7 +2,7 @@ import React from 'react';
 
 // Import contact template
 import ContactForm from '../../components/Contact/contactForm';
-import Footer from '../Footer/index';
+
 
 // Import images
 import phone from '../../images/blue-phone.png';
@@ -10,6 +10,7 @@ import gMail from '../../images/gmail-transparent.png';
 import gitHub from '../../images/gitHub-32px.png';
 import linkedIn from '../../images/linkedIn-logo.png';
 import faceBook from '../../images/fb-logo-58.png';
+import Footer from '../Footer';
 
 const Contact = () => {
     return (
@@ -85,8 +86,8 @@ const Contact = () => {
               </ul>
             </div>
           </section>
-          <Footer />
         </div>
+        <Footer />
       </>
     );
 };
