@@ -101,7 +101,7 @@ const Work = () => {
               </div>
             </section>
 
-            <section class="oneLine row">
+            <section className="oneLine row">
               <div className=" weather-card">
                 <div className="col s6 newContainer">
                   <div className="card">
