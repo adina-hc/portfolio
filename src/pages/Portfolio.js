@@ -6,6 +6,7 @@ import Work from '../components/Work/index';
 import Resume from '../components/Resume/index';
 import Contact from '../components/Contact/index';
 
+
 import 'materialize-css/dist/css/materialize.min.css';
 
 
@@ -17,6 +18,7 @@ const Portfolio = () => {
       <Work />
       <Resume />
       <Contact />
+      
     </>
   )
 }
